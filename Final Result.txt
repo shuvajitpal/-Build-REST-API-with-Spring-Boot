@@ -1,0 +1,24 @@
+# GET http://localhost:8080/tasks
+[{"id": 1,"title": "Learn Spring Boot", "description": "Complete basic CRUD REST API"},
+ {"id": 2,"title": "Read Documentation","description": "Go through Spring official docs"},
+ {"id": 3,"title": "Practice Postman","description": "Test all API endpoints with JSON"},
+ {"id": 4, "title": "Database Setup", "description": "Integrate with MySQL using Spring Data JPA"}]
+
+# GEt http://localhost:8080/task/2
+{"id":2,"title":"Read Documentation","description":"Go through Spring official docs"}
+
+# PUT http://localhost:8080/task/4
+Request Body:
+{
+  "id": 4,
+  "title": "Final Output",
+  "description": "Getting Result Using 8080 PORT"
+}
+Response: 200 OK
+{"id":4,"title":"Final Output","description":"Getting Result Using 8080 PORT"}
+
+# GET http://localhost:8080/tasks
+[{"id": 1,"title": "Learn Spring Boot", "description": "Complete basic CRUD REST API"},
+ {"id": 2,"title": "Read Documentation","description": "Go through Spring official docs"},
+ {"id": 3,"title": "Practice Postman","description": "Test all API endpoints with JSON"},
+ {"id": 4, "title": "Final Output", "description": "Getting Result Using 8080 PORT"}]
